@@ -39,7 +39,7 @@ let data = [
 	"Hello, good looking."
 ];
 function randomCompliment(compliments) {
-	return items[Math.floor(Math.random() * compliments.length)];
+	return data[Math.floor(Math.random() * compliments.length)];
 }
 class Compliments extends Component {
 	render() {
