@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-let data = [
+const compliments = [
 	"Good effort!",
 	"What a fine sweater!",
 	"I appreciate all of your opinions.",
@@ -43,7 +43,7 @@ function randomCompliment(compliments) {
 }
 class Compliment extends Component {
 	render() {
-		let compliment = randomCompliment(data);
+		let compliment = randomCompliment(compliments);
 		return (
 			<div>
 				<h1>{compliment}</h1>
